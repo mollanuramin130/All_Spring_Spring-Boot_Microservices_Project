@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           https://www.springframework.org/schema/beans/spring-beans.xsd">
+           
+          <bean id="paypal" class="com.nt.sbeans.question1.PayPalService"/>
+          
+          <bean id="stripe" class="com.nt.sbeans.question1.StripeService"/>
+          
+          <bean id="paymentProcessor" class="com.nt.sbeans.question1.PaymentProcessor">
+          	<constructor-arg name="payment" ref="stripe"></constructor-arg>
+          </bean>
+</beans>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           https://www.springframework.org/schema/beans/spring-beans.xsd">
+           
+        <bean id="customer" class="com.task.springCore.problem1.Customer">
+        	<constructor-arg name="firstName" value="Virat"/>
+        	<constructor-arg name="lastName" value="Kohli"/>
+        </bean>
+        
+        <bean name="account" class="com.task.springCore.problem1.Account">
+        	<property name="accountNo" value="1231231"/>
+        	<property name="balance" value="4000"/>
+        	<property name="interestRate" value="5.5"/>
+        	<property name="customer" ref="customer"/>
+        </bean>
+        
+</beans>

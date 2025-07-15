@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           https://www.springframework.org/schema/beans/spring-beans.xsd">
+           
+        <bean id="dOrderCake" class="com.implimentation.beans.OrderCake"/>
+        
+        <bean id="pOrderCake" class="com.implimentation.beans.OrderCake">
+        	<constructor-arg name="cake_Flavour" value="Stwabary"></constructor-arg>
+        	<constructor-arg name="cake_quantity" value="3"></constructor-arg>
+        	<constructor-arg name="shape_of_cake" value="Square"></constructor-arg>
+        </bean>
+        <bean id="pOrderCakeWm" class="com.implimentation.beans.OrderCake">
+        	<constructor-arg name="cake_Flavour" value="Choklet"></constructor-arg>
+        	<constructor-arg name="cake_quantity" value="2"></constructor-arg>
+        	<constructor-arg name="shape_of_cake" value="Rectangle"></constructor-arg>
+        	<constructor-arg name="message_on_cake" value="Happy Birthday Nur"></constructor-arg>
+        </bean>
+</beans>

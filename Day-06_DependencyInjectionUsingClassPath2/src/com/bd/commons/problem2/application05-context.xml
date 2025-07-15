@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           https://www.springframework.org/schema/beans/spring-beans.xsd">
+           
+       <bean id="studentVirat" class="com.task.springCore.problem2.DayScholar">
+       		<constructor-arg name="name" value="Virat"/>
+       		<constructor-arg name="studentId" value="101"/>
+       		<constructor-arg name="examFee" value="4000"/>
+       		<constructor-arg name="transportFee" value="3000"/>
+       		<property name="amount" value="13000"></property>
+       </bean>
+           
+       <bean id="studentDhoni" class="com.task.springCore.problem2.DayScholar">
+       		<constructor-arg name="name" value="Dhoni"/>
+       		<constructor-arg name="studentId" value="102"/>
+       		<constructor-arg name="examFee" value="4000"/>
+       		<constructor-arg name="transportFee" value="3000"/>
+       		<property name="amount" value="6000"></property>
+       </bean>
+           
+       <bean id="studentRohit" class="com.task.springCore.problem2.DayScholar">
+       		<constructor-arg name="name" value="Rohit"/>
+       		<constructor-arg name="studentId" value="103"/>
+       		<constructor-arg name="examFee" value="4000"/>
+       		<constructor-arg name="transportFee" value="3000"/>
+       		<property name="amount" value="7000"></property>
+       </bean>
+       
+       <bean id="studentShami" class="com.task.springCore.problem2.Hosteller">
+       		<constructor-arg name="name" value="Shami"/>
+       		<constructor-arg name="studentId" value="104"/>
+       		<constructor-arg name="examFee" value="4000"/>
+       		<constructor-arg name="hostelfee" value="25000"/>
+       		<property name="amount" value="22000"></property>
+       </bean>
+
+</beans>

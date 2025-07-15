@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           https://www.springframework.org/schema/beans/spring-beans.xsd">
+         
+         <bean id="emailNotificatio" class="com.nt.sbeans.question3.EmailNotification"/> 
+         <bean id="smsNotificatio" class="com.nt.sbeans.question3.SmsNotification"/> 
+          
+         <bean id="notificationSender" class="com.nt.sbeans.question3.NotificationSender">
+         	<constructor-arg name="notificationService" ref="smsNotificatio"></constructor-arg>
+         </bean>
+</beans>

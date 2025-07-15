@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/Users/mollanuramin130/Desktop/Naresh IT/Naresh IT Code/Eclipse_IDE_Project_File/Project_Nataraj_Sir_NTSPBMS718/All Jarfile/Spring Core JarFile/spring-aop-6.2.8.jar"/>
+	<classpathentry kind="lib" path="/Users/mollanuramin130/Desktop/Naresh IT/Naresh IT Code/Eclipse_IDE_Project_File/Project_Nataraj_Sir_NTSPBMS718/All Jarfile/Spring Core JarFile/spring-beans-6.2.8.jar"/>
+	<classpathentry kind="lib" path="/Users/mollanuramin130/Desktop/Naresh IT/Naresh IT Code/Eclipse_IDE_Project_File/Project_Nataraj_Sir_NTSPBMS718/All Jarfile/Spring Core JarFile/spring-context-6.2.8.jar"/>
+	<classpathentry kind="lib" path="/Users/mollanuramin130/Desktop/Naresh IT/Naresh IT Code/Eclipse_IDE_Project_File/Project_Nataraj_Sir_NTSPBMS718/All Jarfile/Spring Core JarFile/spring-context-support-6.2.8.jar"/>
+	<classpathentry kind="lib" path="/Users/mollanuramin130/Desktop/Naresh IT/Naresh IT Code/Eclipse_IDE_Project_File/Project_Nataraj_Sir_NTSPBMS718/All Jarfile/Spring Core JarFile/spring-core-6.2.8.jar"/>
+	<classpathentry kind="lib" path="/Users/mollanuramin130/Desktop/Naresh IT/Naresh IT Code/Eclipse_IDE_Project_File/Project_Nataraj_Sir_NTSPBMS718/All Jarfile/Spring Core JarFile/spring-expression-6.2.8.jar"/>
+	<classpathentry kind="lib" path="/Users/mollanuramin130/Desktop/Naresh IT/Naresh IT Code/Eclipse_IDE_Project_File/Project_Nataraj_Sir_NTSPBMS718/All Jarfile/Spring Core JarFile/spring-jcl-6.2.8.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

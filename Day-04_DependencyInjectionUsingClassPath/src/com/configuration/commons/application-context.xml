@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           https://www.springframework.org/schema/beans/spring-beans.xsd">
+         <bean id="result1" class="com.implimentation.beans.Student">
+         	<property name="student_name" value="Nur Amin"></property>
+         	<property name="student_rollNo" value="27"></property>
+         	<property name="math_Marks" value="98"></property>
+         	<property name="physics_Marks" value="76"></property>
+         	<property name="chemistry_marks" value="83"></property>
+         	<property name="english_marks" value="88"></property>
+         	<property name="physicalEdu_marks" value="65"></property>
+         	<property name="examAttended" value="false"></property>
+         </bean>
+         
+         <bean id="result2" class="com.implimentation.beans.Student">
+         	<constructor-arg name="student_name" value="Nur Amin"></constructor-arg>
+         	<constructor-arg name="student_rollNo" value="27"></constructor-arg>
+         	<constructor-arg name="math_Marks" value="98"></constructor-arg>
+         	<constructor-arg name="physics_Marks" value="76"></constructor-arg>
+         	<constructor-arg name="chemistry_marks" value="83"></constructor-arg>
+         	<constructor-arg name="english_marks" value="88"></constructor-arg>
+         	<constructor-arg name="physicalEdu_marks" value="65"></constructor-arg>
+         	<constructor-arg name="examAttended" value="true"></constructor-arg>
+         </bean>
+</beans>
