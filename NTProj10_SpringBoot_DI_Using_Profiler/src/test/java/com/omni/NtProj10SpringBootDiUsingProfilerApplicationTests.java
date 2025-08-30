@@ -4,11 +4,10 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class OmniCoreProj02UserProfileAndAccountManagementApplicationTests {
+class NtProj10SpringBootDiUsingProfilerApplicationTests {
 
 	@Test
 	void contextLoads() {
-		//test case related code
 	}
 
 }

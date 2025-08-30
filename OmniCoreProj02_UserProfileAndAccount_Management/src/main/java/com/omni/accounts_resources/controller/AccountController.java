@@ -3,7 +3,6 @@ package com.omni.accounts_resources.controller;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,8 +23,11 @@ import com.omni.accounts_resources.mapper.AccountResponseMapper;
 @RestController
 @RequestMapping("/accounts")
 public class AccountController {
-	@Autowired
 	private IAccountService accountService;
+	
+	public AccountController(IAccountService accountService) {
+		this.accountService=accountService;
+	}
 	
 	@PostMapping
 	public AccountResponseDto createAccount(@RequestBody AccountRequestDto accountReqDto){
@@ -46,7 +48,7 @@ public class AccountController {
 	@GetMapping
 	public List<AccountResponseDto> getAllAccount(){
 		List<Account> allAccount = accountService.getAllAccount();
-		return allAccount.stream().map(acc->AccountResponseMapper.toDto(acc)).toList();
+		return allAccount.stream().map(AccountResponseMapper::toDto).toList();
 	}
 	
 	@DeleteMapping("/{id}")
